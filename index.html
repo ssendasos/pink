@@ -3,69 +3,102 @@
     <head>
         <meta charset="utf-8">
         <title>Pink</title>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
 
         <header class="page-header">
-            <a class="page-header__logo">
-                <img class="page-header__logo-image" src="img/logo-mobile.svg" width="75" height="22" alt="Лого Pink">
-            </a>
-            <nav class="main-nav">
-                <button class="main-nav__toggle" type="button">Открыть меню</button>
-                <ul class="main-nav__list site-list">
-                    <li class="site-list__item site-list__item--active">
-                        <a>Главная</a>
-                    </li>
-                    <li class="site-list__item">
-                        <a href="photo.html">Фотографии</a>
-                    </li>
-                    <li class="site-list__item">
-                        <a href="form.html">Конкурс</a>
-                    </li>
-                    <li class="site-list__item">
-                        <a href="#">HTML Academy</a>
-                    </li>
-                </ul>
-            </nav>
+            <div class="page-header__wrapper">
+                <a class="page-header__logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="75" height="22" viewBox="0 0 75 22">
+                        <image id="logotype-white-mobile.svg" width="75" height="22" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEsAAAAWCAYAAACIXmHDAAACsElEQVRYhdVZgXHbMAwEehnAG9TdIJmg8QSNJ6g1Qe0J0kygdAKrEyQbOBvInSDKBPEG34MNuhAt0RJF5eq/851NkSD5AJ+ARQA26IYSwBOABYAJBSDPAbzruLtAv1L7vAKYhmy2jJ+aeW5j+wTsX9f20ZEoH+9nSLg1fX8G+vnOCDohZh5p77KWhnGWqP3YK/O8IqLfLWM/E9G1fgSyKYmyjJmLPhsMQGznRJQlshcNIYqINrpPwZaIHmtkMXOQeT0qsiEXVWsAMu4l0TrliL+dW8eYaCFqxsy7T30MMbMQMyciG00/EqyxMt/vQ0d8TDQQ9eyIkh+9yDJYme8pNlZ5x2+tC/8wNBBVSGA4oiiWLDVwPHp9hbnFZmEi1mniYLtd0ELUiXbGRtYo0AU6J0x1A6OiK1E0kKzjMbGhmgBzo2Fyfa8T2q5BtbETURRLFoClmSDVTbiHEi+EOQfIDblIOQcd9iA2n8w+HkJEUQxZSlRumh56r/QMmHnbIPi9su8QlCg/Yr+d00ibZ03OLEiefVctcSgS5lg1MPMzAHHEvTaJ4N9I+jLEbgNRle7JaddNaHAsQmVM33KnVchFs9pKoohyp0Qdi4ayplUj+x7DSq/3Lx+YZa80iyb1/hDBd5eS6KFEaaFHfm76LFRqTmCP4dZLNn1UQ49ADETwAcyI6FXF+A5AzsyhtYaw06zcOUDmeJE61zgiB7Dz615L1m4s/RkKQ1ipTUsAf7wyqQtOiDJzFAC+SmRpkxC2tX3/q6Q0hIYbMre5Xkf8aiLKzJFpPUgaxRv7P9vFkEX/SqJH/TnxUphUyIxG1squiyKLDoStUifCnn0/KT5eKhdHlmJuvJ8cepHNTNP+UrlIstT7mfH+GHP4Grm0Lw2S5U0RLyyi5hbbY76w0PGHpBYo/wIJHOiMJVtCowAAAABJRU5ErkJggg=="/>
+                      </svg>
+                </a>
+                <nav class="main-nav">
+                    <button class="main-nav__toggle" type="button">Открыть меню</button>
+                    <ul class="main-nav__list site-list">
+                        <li class="site-list__item site-list__item--active">
+                            <a>Главная</a>
+                        </li>
+                        <li class="site-list__item">
+                            <a href="photo.html">Фотографии</a>
+                        </li>
+                        <li class="site-list__item">
+                            <a href="form.html">Конкурс</a>
+                        </li>
+                        <li class="site-list__item">
+                            <a href="#">HTML Academy</a>
+                        </li>
+                    </ul>
+                </nav>
+                <img class="phone-in-hand" src="img/phone-in-hand-modile.png">
+            </div>
+            <div class="download__wrapper">
+                <h1 class="visually-hidden">Взгляните на жизнь иначе!</h1>
+                <a class="button nobile__button--download" href="#">Скачать приложение</a>
+                <div class="download__icons">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="47" height="56" viewBox="0 0 47 56">
+                            <image id="apple-logo.svg" width="47" height="56" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC8AAAA4CAYAAABt9KGPAAACkUlEQVRoge2Zi1ECMRCGszcWgBWoHUAFch1YAlagVgBWgFYAHQAVgBVAB2AFhxWss7I57pHkEmAuy4zfzA0jcXJ/QrJPFRNEHCDiDI/0owrygUVnWEeueETsIOLSIFrTESCzDiJ2LbutyQTIrMM7vnUIJyYCpNapXEobTwKkliFRHsK3AqTWQcS1h3h5VoYvaRNjAVLrIOKoQbjMS6oO4l02Xa5wZRdPJvMiluXmEpN4sFdKrZRSCwCYXmpSCPlnRLxXStGjrQOJ2tADAPsT5urzfHf89Td/rgBgFTKf9SVkETw85IwDLmt8wnO9eppPPWe4GWWXPvZ8SRGKXybaY7LgaugbCt2drq/wrsdOtw1tyqBJuC3WlkK+AKgIp59mHXzG2ielC53ov/iiLeNq8mLPj0oKX5LHk5nJHCGz/AAA9Hk4NmyOpO/6ho9L7k/0zr/E0+TFriqcAD7rMvPHI6nJ49LOy0u/ykxtoQKJf2xfTxCftgES7+d247DTlsWEdPFz12DiGhTAj2tQungn/+JjIV2804yTh8X2tJzErS0/Tjirl4w1Akh0bCyYoW2AxH+1qyUYSuBHpoGE42TpDE3Jt05GsivIoojnYsVNm0rpl1YzKR4hLX4RT08wQ64pDfSxoSOzvZKjk/O38+wEnOGnQOZ50YmrtjIbW2bSPLYBgN0VXdxdqWLGvEcSE4pZJ5enJZMXx2qdET77a8GWJ6/h1OJ5PvtSj89HsYZj7UnxzyOpM02b2ivG9i7x0hxXr1rDsaaBvMK0FVnNvLmKT1a4zROT8zrlZywg407eqc25y7T4PRttpTamYY4+t0d9GnbG7OmcBVBKRuKqL6fdpeaw1+XmHq+pN6sXT77GjVLqFxfFcSakzSNHAAAAAElFTkSuQmCC"/>
+                          </svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="43" height="47" viewBox="0 0 43 47">
+                            <image id="android-logo.svg" width="43" height="47" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAAAvCAYAAAB6zDPWAAACSElEQVRYhe2ZsVHDMBSG/+QYwExA2ADKqCGZANKrSCaATABMAEyQFOkJExCaqCQbECbAG8A9eCY+nWQ9g2Uo9N25iC1Lnx3pSX7qIMBi3e8BeNTKHArL0lGw1cpsBfe9ABiGygZlubIZgFetzJV1PgNwBuAUwABA5rg9B7AC8ABgqZXJrTqozgOtzCTkIZUliefi6fn3JYCxR9AHiS4BTEm6+NcAHNsP8WNZFr4AcALgiUXrSLqkr4v6tDK3kpvEsvgSfvulpE2uldmXFu5KCy7W/RuH6JwPCRt+m+W/O+N6RUj77ID7VpmVVmaI3QAcB6rZ535KA/LeukZjYRXy2JPIApg5zvV4oIEjQYgBD64jT/3B0CiJs643EYORVmZZVUDSZ0+b8/ldOxLZnqBMEwTbkchK+mMTtNVOO0gGWGtPHApfktBlx9eYVL68T1leUIyLhYZkWRcbdjrjWXNOTp3Fuj+2gj4JT4qYt1j339sS1Mp0sIvtM2t6n1A0sOfmzHGubVzrkJuuZxXVVmz14Wo/E6+6/gNJNhZJNhZJNhZJNhZJNhZJNhZdTkfaiBJlEXG1vyLZEeercj5utTLTPxD8htsn4S07kd9I8sH42NJn8nfuzIekz06tzF8Mcm6nEmkWkZJp56UPOJstHz7svYayJH3r3WllNo3IlqR9XeLa3m+w7rvibLlN8K8vk+JsLJJsLJJsLOrKNp2wq1VfXdkHz/nKjYuK6776nNSS5cwibbwVFBnHytmHr9NGcnnapokk9JA7AHwAybS3FT04XnwAAAAASUVORK5CYII="/>
+                          </svg> 
+                          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44" height="41" viewBox="0 0 44 41">
+                            <image id="microsoft-logo.svg" width="44" height="41" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAApCAYAAABOScuyAAAAkklEQVRYhe3UoQ3CUBhF4fsIA9RgMWiG6A4wD5B0GxgByQboGiaoRUFKwgb/EU3OZ567OeLPa9Nh90mx7ja2+R0effn2qnqQZjDNYJrBNINpBtMMphlMM5i2uOB1kgu4T24vQ9tfX+fq0edx+9t83zfl2/NJnKpHk/xDy7f9JWgG0wymGUwzmGYwzWCawTSDUUm+Sz0PpY+0J6wAAAAASUVORK5CYII="/>
+                          </svg>
+                </div>
+                <p class="download__availability">Доступно для iPhone, iPad, Android,<br> Windows Phone, OS X, Windows 8</p>
+            </div>
         </header>
 
         <main class="page-main">
 
-            <h1 class="visually-hidden">Взгляните на жизнь иначе!</h1>
+            
 
-            <section class="download">
-                <a class="button" href="#">Скачать приложение</a>
-                <div class="download__icons">
-                    <img class="download__icon-ios" src="img/icon-ios" width="47" height="56" alt="Иконка Apple">
-                    <img class="download__icon-android" src="img/icon-android" width="43" height="47" alt="Иконка Android">
-                    <img class="download__icon-windows" src="img/icon-windows" width="44" height="41" alt="Иконка Windows">
-                </div>
-                <p class="download__availability">Доступно для iPhone, iPad, Android,<br> Windows Phone, OS X, Windows 8</p>
-            </section>
+            
 
             <section class="advantages">
-                <h2 class="advantages__title">Устали от серости мегаполиса?<br> Нам есть, что вам предложить!</h2>
-                <ul class="advantages__list">
-                    <li class="advantages__item">
-                        <h3 class="advantages__item-title">Поднимает настроение</h3>
-                        <p class="advantages__description">Приложение позволит вам победить осенюю хандру и депрессию буквально в несколько кликов!</p>
-                    </li>
-                    <li class="advantages__item">
-                        <h3 class="advantages__item-title">Меняет мир вокруг</h3>
-                        <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-                    </li>
-                    <li class="advantages__item">
-                        <h3 class="advantages__item-title">Заводит новых друзей</h3>
-                        <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-                    </li>
-                </ul>
+                <h2 class="advantages__title">Устали от серости<br> мегаполиса?</h2>
+                <h2 class="advantages__title-second">Нам есть, что вам<br> предложить!</h2>
+                <div class="advantages__wrapper">
+                    <ul class="advantages__list">
+                        <li class="advantages__item">
+                            <h3 class="advantages__item-title">Поднимает настроение</h3>
+                            <p class="advantages__description">Приложение позволит вам победить осенюю хандру и депрессию буквально в несколько кликов!</p>
+                            <img src="img/iphone-grey-desktop.png" width="186" height="382">
+                        </li>
+                        <li class="advantages__item">
+                            <h3 class="advantages__item-title">Меняет мир вокруг</h3>
+                            <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+                            <img src="img/iphone-purple.png" width="186" height="382">
+                        </li>
+                        <li class="advantages__item">
+                            <h3 class="advantages__item-title">Заводит новых друзей</h3>
+                            <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+                            <img class="iphone-img" src="img/iphone-hello-mobile.png" width="186" height="382">
+                        </li>
+                    </ul>
+                    <div class="advantages__profit" >
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="238" height="276" viewBox="0 0 238 276">
+                            <image id="_24" data-name="24" width="238" height="276" xlink:href="data:img/png;base64,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"/>
+                        </svg>
+                        <div class="profit__wrapper">
+                            <h2 class="advantages__profit-title">Эффект<br> на 24 часа!</h2>
+                            <p class="advantages__profit-description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+                            <a class="advantages__research-link" href="#">Узнать больше об исследовании</a>
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <section class="reviews">
                 <div class="reviews__wrapper slider">
                     <div class="reviews__list">
                         <blockquote class="reviews__item slider__item">
+                            
                             <cite class="reviews__author-name">Николай Петров</cite>
+                            <p class="reviews__author-name__description">25 лет, водитель трамвая</p>
                             <p class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
                         </blockquote>
                     </div>
@@ -81,48 +114,48 @@
                         <tr class="catalog__name">
                             <th class="catalog__item">
                                 База<br>
-                                <span>1,99 USD</span>
+                                <span class="catalog__cost">1,99 USD</span>
                             </th>
-                            <th class="catalog__item">
+                            <th class="catalog__item catalog__item--hot">
                                 Cтандарт<br>
-                                <span>3,99 USD</span>
+                                <span class="catalog__cost">3,99 USD</span>
                             </th>
                             <th class="catalog__item">
                                 Анлим<br>
-                                <span>9,99 USD</span>
+                                <span class="catalog__cost">9,99 USD</span>
                             </th>
                         </tr>
                         <tr class="catalog__filter">
-                            <td>
-                                Розовый фильтр <span class="catalog__check-in">Галочка</span>
+                            <td class="catalog__cell">
+                                Розовый фильтр <span class="catalog__check-in"></span>
                             </td>
-                            <td>
-                                Розовый фильтр <span class="catalog__check-in">Галочка</span>
+                            <td class="catalog__cell">
+                                Розовый фильтр <span class="catalog__check-in"></span>
                             </td>
-                            <td>
-                                Розовый фильтр <span class="catalog__check-in">Галочка</span>
+                            <td class="catalog__cell">
+                                Розовый фильтр <span class="catalog__check-in"></span>
                             </td>
                         </tr>
                         <tr class="catalog__smiles">
-                            <td>
-                                Смайлики <span class="catalog__check-out">Крестик</span>
+                            <td class="catalog__cell">
+                                Смайлики <span class="catalog__check-out"></span>
                             </td>
-                            <td>
-                                Смайлики <span class="catalog__check-in">Галочка</span>
+                            <td class="catalog__cell">
+                                Смайлики <span class="catalog__check-in"></span>
                             </td>
-                            <td>
-                                Смайлики <span class="catalog__check-in">Галочка</span>
+                            <td class="catalog__cell">
+                                Смайлики <span class="catalog__check-in"></span>
                             </td>
                         </tr>
                         <tr class="catalog__comments">
-                            <td>
-                                Комментарии <span class="catalog__check-out">Крестик</span>
+                            <td class="catalog__cell">
+                                Комментарии <span class="catalog__check-out"></span>
                             </td>
-                            <td>
-                                Комментарии <span class="catalog__check-out">Крестик</span>
+                            <td class="catalog__cell">
+                                Комментарии <span class="catalog__check-out"></span>
                             </td>
-                            <td>
-                                Комментарии <span class="catalog__check-in">Галочка</span>
+                            <td class="catalog__cell">
+                                Комментарии <span class="catalog__check-in"></span>
                             </td>
                         </tr>
                     </table>
@@ -134,14 +167,45 @@
         </main>
 
         <footer class="page-footer__main">
-            <div class="page-footer__contacts">
-                <b class="contacts__title">Звоните:</b>
-                <p class="contacts__item">+7 (812) 555-66-66</p>
-                <b class="contacts__title">Пишите:</b>
-                <p class="contacts__item">mail@htmlacademy.ru</p>
-                <b class="contacts__title">Приезжайте в гости:</b>
-                <p class="contacts__item">ул. Большая Конюшенная, 19/8</p>
-                
+            <div class="page-footer__wrapper">
+                <div class="page-footer__contacts">
+                    <h2 class="contacts__main-title">Остались вопросы? Свяжитесь с нами!</h2>
+                    <b class="contacts__title">Звоните:</b>
+                    <p class="contacts__item">+7 (812) 555-66-66</p>
+                    <b class="contacts__title">Пишите:</b>
+                    <p class="contacts__item">mail@htmlacademy.ru</p>
+                    <b class="contacts__title">Приезжайте в гости:</b>
+                    <p class="contacts__item">ул. Большая Конюшенная, 19/8</p>
+                    
+                </div>
+                <div class="map__wrapper">
+                    <img class="map__triangle" src="img/triangle-white-footer.png" width="320" height="123">
+                </div>
+            </div>
+            
+            <div class="page-footer__social">
+                <div class="page-footer_logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="147" height="40" viewBox="0 0 147 40">
+                            <image id="logotype-blue-tablet.svg" width="147" height="40" xlink:href="data:img/png;base64,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"/>
+                        </svg>
+                </div>
+                <div class="page-footer__social-icons">
+                    <ul class="social__list">
+                        <li class="social__item">
+                            <a class="social__link social__link--twitter" href="#">Мы в твиттере!</a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link social__link--facebook" href="#">Мы на фейсбуке!</a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link social__link--youtube" href="#">Мы на Ютубе!</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="page-footer__copyright">
+                    <b class="copyright__text">Разработано</b>
+                    <a class="copyright__link" href="#">HTML Academy</a>
+                </div>
             </div>
         </footer>
 
