@@ -1,0 +1,134 @@
+
+.page-footer {
+    width: 320px;
+    margin: 0 auto;
+}
+
+.contacts__main-title {
+    font-size: 24px;
+    line-height: auto;
+    font-weight: 300;
+    text-align: center;
+    
+}
+
+.contacts__title {
+    font-size: 18px;
+    line-height: auto;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.contacts__item {
+    display: block;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 300;
+    color: #d22856;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 5px;
+    text-decoration: none;
+    
+}
+
+.contacts__item--mail {
+    &:hover {
+        color: #283645;
+    }
+
+    &:active {
+        opacity: 0.3;
+        text-decoration: none;
+    }
+}
+
+.map__wrapper {
+    position: relative;
+}
+
+.map-marker {
+    position: absolute;
+
+    width: 36px;
+    height: 35px;
+    top: 95px;
+    left: 145px;
+
+    background-image: url(/img/map-marker.png);
+    
+}
+
+
+
+@media (min-width: @tablet-width) {
+    .page-footer {
+        width: 660px;
+
+    }
+
+    .contacts__main-title {
+        font-size: 40px;
+        line-height: 45px;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .contacts__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .adress {
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+
+    .map-marker {
+        top: 195px;
+        left: 315px;
+    }
+
+    
+}
+
+@media (min-width: @desktop-width) {
+    .page-footer {
+        width: 1200px;
+    }
+
+    .contacts__main-title {
+        padding-left: 400px;
+        padding-right: 400px;
+    }
+
+    .adress {
+        padding: 0;
+        
+    }
+
+    .phone__wrapper {
+        order: 1;
+        margin-left: 120px;
+    }
+
+    .adress__wrapper {
+        order: 2;
+    }
+
+    .write__wrapper {
+        order: 3;
+        margin-right: 120px;
+    }
+
+    .contacts__item {
+        margin-top: 20px;
+    }
+
+    .map-marker {
+        left: 585px;
+        top: 262px;
+    }
+}

@@ -1,0 +1,106 @@
+.form-page__title {
+    color: #ffffff;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 300;
+    padding-left: 40px;
+    padding-right: 40px;
+    line-height: 30px;
+    margin-top: 0;
+    margin-top: 30px;
+    padding-bottom: 50px;
+}
+
+.form__description {
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+@media (min-width: @tablet-width) {
+    .form-page__title {
+        font-size: 50px;
+        line-height: 50px;
+        margin-top: 85px;
+        padding-bottom: 85px;
+    }
+
+    .form__description {
+        padding-left: 85px;
+        padding-right: 85px;
+        font-size: 18px;
+    }
+
+    .form__wrapper {
+        display: grid;
+        grid-template-rows: 291px 304px 313px 558px 298px;
+        grid-row-gap: 60px;
+    }
+
+    .form__radio {
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    .form__checkbox {
+        grid-row-start: 4;
+        grid-row-end: 5;
+        
+    }
+
+    
+}
+
+
+@media (min-width: @desktop-width) {
+    .form-page__title {
+        line-height: 60px;
+        padding-left: 210px;
+        padding-right: 210px;
+        margin-top: 70px;
+        padding-bottom: 100px;
+    }
+
+    .form__description {
+        padding-left: 230px;
+        padding-right: 230px;
+        line-height: 30px;
+        margin-top: 82px;
+        margin-bottom: 70px;
+    }
+
+    .form__wrapper {
+        grid-template-columns: 500px 435px;
+        grid-template-rows: 295px 160px 230px 222px;
+        grid-column-gap: 43px;
+        margin-left: 108px;
+    }
+
+    .form__radio {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        
+    }
+
+    .contact-form {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .form__checkbox {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .text__description {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    
+}

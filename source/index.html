@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Pink</title>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+        <link href="css/style.min.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <header class="page-header">
+            <div class="page-header__wrapper">
+                <div class="page-header__wrapper-top">
+                    <a class="page-header__logo">
+                        <picture>
+                            <source type="image/webp" media="(min-width: 1200px)" srcset="img/logotype-white-desktop.webp">
+                            <source type="image/webp" media="(min-width: 660px)" srcset="img/logotype-white-tablet.webp">
+                            <img  class="page-header__logo-image" src="img/logotype-white-mobile.webp" >
+                        </picture>
+                    </a>
+                    <nav class="main-nav main-nav--closed main-nav--nojs">
+                        <button class="main-nav__toggle" type="button"></button>
+                        <div class="main-nav__wrapper">
+                            <ul class="main-nav__list site-list">
+                                <li class="site-list__item site-list__item--active">
+                                    <a>Главная</a>
+                                </li>
+                                <li class="site-list__item">
+                                    <a href="photo.html">Фотографии</a>
+                                </li>
+                                <li class="site-list__item">
+                                    <a href="form.html">Конкурс</a>
+                                </li>
+                                <li class="site-list__item">
+                                    <a href="#">HTML Academy</a>
+                                </li>
+                            </ul>
+                            </nav>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="download__wrapper">
+                <div class="phone-in-hand__wrapper">
+                    <div class="phone-in-hand__flex">
+                        <div class="phone-in-hand__overflow">
+                            <picture>
+                                <source type="image/webp" srcset="img/phone-in-hand-modile.webp">
+                                <img class="phone-in-hand" src="img/phone-in-hand-modile.png">
+                            </picture>
+                        </div>
+                        <div class="download">
+                            <h1 class="download__title">Взгляните<br> на жизнь<br> иначе!</h1>
+                            <a class="button mobile__button--download" href="#">Скачать приложение</a>
+                            <div class="download__icons">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="47" height="56" viewBox="0 0 47 56">
+                                        <image id="apple-logo.svg" width="47" height="56" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC8AAAA4CAYAAABt9KGPAAACkUlEQVRoge2Zi1ECMRCGszcWgBWoHUAFch1YAlagVgBWgFYAHQAVgBVAB2AFhxWss7I57pHkEmAuy4zfzA0jcXJ/QrJPFRNEHCDiDI/0owrygUVnWEeueETsIOLSIFrTESCzDiJ2LbutyQTIrMM7vnUIJyYCpNapXEobTwKkliFRHsK3AqTWQcS1h3h5VoYvaRNjAVLrIOKoQbjMS6oO4l02Xa5wZRdPJvMiluXmEpN4sFdKrZRSCwCYXmpSCPlnRLxXStGjrQOJ2tADAPsT5urzfHf89Td/rgBgFTKf9SVkETw85IwDLmt8wnO9eppPPWe4GWWXPvZ8SRGKXybaY7LgaugbCt2drq/wrsdOtw1tyqBJuC3WlkK+AKgIp59mHXzG2ielC53ov/iiLeNq8mLPj0oKX5LHk5nJHCGz/AAA9Hk4NmyOpO/6ho9L7k/0zr/E0+TFriqcAD7rMvPHI6nJ49LOy0u/ykxtoQKJf2xfTxCftgES7+d247DTlsWEdPFz12DiGhTAj2tQungn/+JjIV2804yTh8X2tJzErS0/Tjirl4w1Akh0bCyYoW2AxH+1qyUYSuBHpoGE42TpDE3Jt05GsivIoojnYsVNm0rpl1YzKR4hLX4RT08wQ64pDfSxoSOzvZKjk/O38+wEnOGnQOZ50YmrtjIbW2bSPLYBgN0VXdxdqWLGvEcSE4pZJ5enJZMXx2qdET77a8GWJ6/h1OJ5PvtSj89HsYZj7UnxzyOpM02b2ivG9i7x0hxXr1rDsaaBvMK0FVnNvLmKT1a4zROT8zrlZywg407eqc25y7T4PRttpTamYY4+t0d9GnbG7OmcBVBKRuKqL6fdpeaw1+XmHq+pN6sXT77GjVLqFxfFcSakzSNHAAAAAElFTkSuQmCC"/>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="43" height="47" viewBox="0 0 43 47">
+                                        <image id="android-logo.svg" width="43" height="47" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAAAvCAYAAAB6zDPWAAACSElEQVRYhe2ZsVHDMBSG/+QYwExA2ADKqCGZANKrSCaATABMAEyQFOkJExCaqCQbECbAG8A9eCY+nWQ9g2Uo9N25iC1Lnx3pSX7qIMBi3e8BeNTKHArL0lGw1cpsBfe9ABiGygZlubIZgFetzJV1PgNwBuAUwABA5rg9B7AC8ABgqZXJrTqozgOtzCTkIZUliefi6fn3JYCxR9AHiS4BTEm6+NcAHNsP8WNZFr4AcALgiUXrSLqkr4v6tDK3kpvEsvgSfvulpE2uldmXFu5KCy7W/RuH6JwPCRt+m+W/O+N6RUj77ID7VpmVVmaI3QAcB6rZ535KA/LeukZjYRXy2JPIApg5zvV4oIEjQYgBD64jT/3B0CiJs643EYORVmZZVUDSZ0+b8/ldOxLZnqBMEwTbkchK+mMTtNVOO0gGWGtPHApfktBlx9eYVL68T1leUIyLhYZkWRcbdjrjWXNOTp3Fuj+2gj4JT4qYt1j339sS1Mp0sIvtM2t6n1A0sOfmzHGubVzrkJuuZxXVVmz14Wo/E6+6/gNJNhZJNhZJNhZJNhZJNhZJNhZdTkfaiBJlEXG1vyLZEeercj5utTLTPxD8htsn4S07kd9I8sH42NJn8nfuzIekz06tzF8Mcm6nEmkWkZJp56UPOJstHz7svYayJH3r3WllNo3IlqR9XeLa3m+w7rvibLlN8K8vk+JsLJJsLJJsLOrKNp2wq1VfXdkHz/nKjYuK6776nNSS5cwibbwVFBnHytmHr9NGcnnapokk9JA7AHwAybS3FT04XnwAAAAASUVORK5CYII="/>
+                                    </svg> 
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44" height="41" viewBox="0 0 44 41">
+                                        <image id="microsoft-logo.svg" width="44" height="41" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAApCAYAAABOScuyAAAAkklEQVRYhe3UoQ3CUBhF4fsIA9RgMWiG6A4wD5B0GxgByQboGiaoRUFKwgb/EU3OZ567OeLPa9Nh90mx7ja2+R0effn2qnqQZjDNYJrBNINpBtMMphlMM5i2uOB1kgu4T24vQ9tfX+fq0edx+9t83zfl2/NJnKpHk/xDy7f9JWgG0wymGUwzmGYwzWCawTSDUUm+Sz0PpY+0J6wAAAAASUVORK5CYII="/>
+                                    </svg>
+                            </div>
+                            <p class="download__availability">Доступно для iPhone, iPad, Android,<br> Windows Phone, OS X, Windows 8</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+        </header>
+
+        <main class="page-main">
+
+            
+
+            
+
+            <section class="advantages">
+                <h2 class="advantages__title">Устали от серости<br> мегаполиса?</h2>
+                <h2 class="advantages__title-second">Нам есть, что вам<br> предложить!</h2>
+                <div class="advantages__wrapper">
+                    <img class="iphone-big" src="img/Iphone-big-tablet.png" width="268" height="547">
+                    <ul class="advantages__list">
+                        <li class="advantages__item">
+                            <div class="img__wrapper">
+                                <img class="mobile-hidden" src="img/iphone-grey-desktop.png" width="186" height="382">
+                            </div>
+                            <h3 class="advantages__item-title">Поднимает настроение</h3>
+                            <p class="advantages__description">Приложение позволит вам победить осенюю хандру и депрессию буквально в несколько кликов!</p>
+                            
+                        </li>
+                        <li class="advantages__item">
+                            <div class="img__wrapper">
+                                <img class="mobile-hidden" src="img/iphone-purple.png" width="186" height="382">
+                            </div>
+                            <h3 class="advantages__item-title">Меняет мир вокруг</h3>
+                            <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+                            
+                        </li>
+                        <li class="advantages__item">
+                            <div class="img__wrapper">
+                                <img class="iphone-img iphone-desktop" src="img/iphone-hello-mobile.png" width="187" height="389">
+                            </div>
+                            <h3 class="advantages__item-title">Заводит новых друзей</h3>
+                            <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+                            <img class="iphone-img iphone-mobile" src="img/iphone-hello-mobile.png" width="157" height="330">
+                        </li>
+                    </ul>
+                    
+                    </div>
+                    <div class="advantages__profit" >
+                        <img class="clock-img" src="img/clock-tablet.png">
+                            <div class="profit__wrapper">
+                                <h2 class="advantages__profit-title">Эффект<br> на 24 часа!</h2>
+                                <p class="advantages__profit-description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+                                <a class="advantages__research-link" href="#">Узнать больше об исследовании</a>
+                            </div>
+                </div>
+            </section>
+
+            <section class="reviews">
+                <img class="quotes" src="img/quotes.png">
+                <div class="reviews__wrapper slider">
+                    <input type="radio" id="btn-1" name="radio" checked>
+                    <input type="radio" id="btn-2" name="radio">
+                    <input type="radio" id="btn-3" name="radio">
+                    <div class="slider__inner">
+                        <div class="reviews__list slider__list">
+                            <blockquote class="reviews__item slider__item">
+                                
+                                <h3 class="reviews__author-name author-name__mobile">Николай Петров</h3>
+                                
+                                <p class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
+                                <h3 class="reviews__author-name author-name__tablet">Николай Петров</h3>
+                                <p class="reviews__author-name__description">25 лет, водитель трамвая</p>
+                            </blockquote>
+                            <blockquote class="reviews__item slider__item">
+                                
+                                    <h3 class="reviews__author-name author-name__mobile">Николай Петров</h3>
+                                    
+                                    <p class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
+                                    <h3 class="reviews__author-name author-name__tablet">Николай Петров</h3>
+                                    <p class="reviews__author-name__description">25 лет, водитель трамвая</p>
+                                </blockquote>
+                                <blockquote class="reviews__item slider__item">
+                                
+                                        <h3 class="reviews__author-name author-name__mobile">Николай Петров</h3>
+                                        
+                                        <p class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
+                                        <h3 class="reviews__author-name author-name__tablet">Николай Петров</h3>
+                                        <p class="reviews__author-name__description">25 лет, водитель трамвая</p>
+                                    </blockquote>
+                        </div>
+                    </div>
+                    <div class="slider-controls">
+                        <label for="btn-1"></label>
+                        <label for="btn-2"></label>
+                        <label for="btn-3"></label>
+                    </div>
+                </div>
+            </section>
+
+            <section class="catalog">
+                <div class="catalog__wrapper slider">
+                    <input type="radio" id="btn1" name="toggle" checked>
+                    <input type="radio" id="btn2" name="toggle">
+                    <input type="radio" id="btn3" name="toggle">
+                    <div class="catalog__inner">
+                    <table class="catalog__list">
+                            <tr class="catalog__name">
+                                <th class="empty-block"></th>
+                                <th class="catalog__item">
+                                    База<br>
+                                    <span class="catalog__cost">1,99 USD</span>
+                                </th>
+                                <th class="catalog__item catalog__item--hot">
+                                    Cтандарт<br>
+                                    <span class="catalog__cost">3,99 USD</span>
+                                </th>
+                                <th class="catalog__item">
+                                    Анлим<br>
+                                    <span class="catalog__cost">9,99 USD</span>
+                                </th>
+                            </tr>
+                            <tr class="catalog__filter">
+                                <td class="catalog__cell">
+                                    <div class="check__wrapper">
+                                        <span class="catalog-check__text">Розовый фильтр</span> 
+                                        <span class="catalog__check-in check-hidden"></span>
+                                    </div>
+                                </td>
+                                <td class="catalog__cell">
+                                    <div class="check__wrapper">
+                                        <span class="catalog-check__text text-hidden">Розовый фильтр</span>
+                                        <span class="catalog__check-in"></span>
+                                    </div>
+                                </td>
+                                <td class="catalog__cell">
+                                    <div class="check__wrapper">
+                                        <span class="catalog-check__text text-hidden">Розовый фильтр</span>
+                                        <span class="catalog__check-in"></span>
+                                    </div>
+                                </td>
+                                <td class="empty-cell catalog__cell">
+                                    <span class="catalog__check-in check-custom"></span>
+                                </td>
+                            </tr>
+                            <tr class="catalog__smiles">
+                                <td class="catalog__cell">
+                                    <div class="check__wrapper">
+                                        <span class="catalog-check__text">Смайлики</span> 
+                                        <span class="catalog__check-out check-hidden"></span>
+                                    </div>
+                                </td>
+                                
+                                <td class="catalog__cell">
+                                    <div class="check__wrapper">
+                                        <span class="catalog-check__text text-hidden">Смайлики</span> 
+                                        <span class="catalog__check-in"></span>
+                                    </div>
+                                </td>
+                                <td class="catalog__cell">
+                                    <div class="check__wrapper">
+                                        <span class="catalog-check__text text-hidden">Смайлики</span> 
+                                        <span class="catalog__check-in"></span>
+                                    </div>
+                                </td>
+                                <td class="empty-cell catalog__cell">
+                                    <span class="catalog__check-in check-custom"></span>
+                                </td>
+                            </tr>
+                            <tr class="catalog__comments">
+                                <td class="catalog__cell">
+                                    <div class="check__wrapper">
+                                        <span class="catalog-check__text">Комментарии</span> 
+                                        <span class="catalog__check-out check-hidden"></span>
+                                    </div>
+                                </td>
+                                
+                                <td class="catalog__cell">
+                                    <div class="check__wrapper">
+                                        <span class="catalog-check__text text-hidden">Комментарии</span> 
+                                        <span class="catalog__check-out"></span>
+                                    </div>
+                                </td>
+                                
+                                <td class="catalog__cell">
+                                    <div class="check__wrapper">
+                                        <span class="catalog-check__text text-hidden">Комментарии</span> 
+                                        <span class="catalog__check-in"></span>
+                                    </div>
+                                </td>
+                                <td class="catalog__cell empty-cell">
+                                    <span class="catalog__check-out check-custom"></span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="slider-controls catalog-controls">
+                        <label for="btn1"></label>
+                        <label for="btn2"></label>
+                        <label for="btn3"></label>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="page-footer">
+            <div class="page-footer__wrapper">
+                <div class="page-footer__contacts">
+                    
+                    <h2 class="contacts__main-title">Остались вопросы? Свяжитесь с нами!</h2>
+                    <div class="contacts__wrapper">
+                        <div class="phone__wrapper">
+                            <h3 class="contacts__title">Звоните:</h3>
+                            <p class="contacts__item">+7 (812) 555-66-66</p>
+                        </div>
+                        <div class="write__wrapper">
+                            <h3 class="contacts__title">Пишите:</h3>
+                            <a href="#" class="contacts__item contacts-item--mail">mail@htmlacademy.ru</a>
+                        </div>
+                        <div class="adress__wrapper">
+                            <h3 class="contacts__title">Приезжайте в гости:</h3>
+                            <p class="contacts__item adress">ул. Большая<br> Конюшенная, 19/8</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="map__wrapper">
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="img/triangle-desktop.png">
+                        <source media="(min-width: 660px)" srcset="img/triangle-tablet.png">
+                        <img class="map__triangle" src="img/triangle-white-footer.png" >
+                    </picture>
+                    <span class="map-marker"></span>
+                </div>
+            </div>
+            
+            <div class="page-footer__social">
+                <div class="page-footer__logo">
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="img/logotype-blue-desktop2.png">
+                        <img src="img/logotype-blue-tablet.png">
+                    </picture>
+                </div>
+                <div class="page-footer__social-icons">
+                    <ul class="social__list">
+                        <li class="social__item social__item--twitter">
+                            <a class="social__link social__link--twitter" href="#">Мы в твиттере!</a>
+                        </li>
+                        <li class="social__item social__item--facebook">
+                            <a class="social__link social__link--facebook" href="#">Мы на фейсбуке!</a>
+                        </li>
+                        <li class="social__item social__item--youtube">
+                            <a class="social__link social__link--youtube" href="#">Мы на Ютубе!</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="page-footer__copyright">
+                    <b class="copyright__text">Разработано</b>
+                    <a class="copyright__link" href="#">HTML Academy</a>
+                </div>
+            </div>
+        </footer>
+        <script>
+        
+            var navMain = document.querySelector(".main-nav");
+            var navToggle = document.querySelector(".main-nav__toggle");
+
+            navMain.classList.remove('main-nav--nojs');
+
+            navToggle.addEventListener('click', function() {
+                if (navMain.classList.contains('main-nav--closed')) {
+                    navMain.classList.remove('main-nav--closed');
+                    navMain.classList.add('main-nav--opened');
+                } else {
+                    navMain.classList.add('main-nav--closed')
+                    navMain.classList.remove('main-nav--opened');
+                    
+                }
+            });
+        
+        </script>
+    </body>
+</html>

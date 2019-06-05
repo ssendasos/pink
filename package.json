@@ -5,7 +5,8 @@
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "int-test": "mocha --require babel-core/register --recursive test"
+    "build": "gulp build",
+    "start": "npm run build && gulp serve"
   },
   "repository": {
     "type": "git",
@@ -18,8 +19,15 @@
   },
   "homepage": "https://github.com/ssendasos/pink#readme",
   "dependencies": {
+    "autoprefixer": "^9.5.1",
     "browser-sync": "^2.26.3",
+    "del": "^4.1.1",
     "gulp": "^4.0.0",
+    "gulp-csso": "^3.0.1",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-posthtml": "^3.0.4",
+    "gulp-rename": "^1.4.0",
+    "gulp-webp": "^4.0.1",
     "ts-node": "^8.1.0"
   },
   "devDependencies": {

@@ -1,0 +1,213 @@
+
+.main-nav {
+    position: relative;
+
+    width: 320px;
+
+    z-index: 10;
+}
+
+
+
+
+.main-nav__list {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #ffffff;
+
+    list-style: none;
+
+    padding: 0;
+    margin: 0;
+    
+}
+
+.main-nav__toggle {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    z-index: 2;
+
+    display: block;
+    width: 50px;
+    height: 24px;
+
+    background: transparent;
+    cursor: pointer;
+    border: none;
+    transform: translateY(-45px);
+}
+
+.main-nav--closed .main-nav__toggle::before {
+    content: "";
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    width: 50px;
+    height: 4px;
+
+    background-color: #ffffff;
+    box-shadow: 0 10px 0 0 #ffffff, 0 20px 0 0 #ffffff; 
+}
+
+.main-nav--closed .main-nav__toggle:hover::before {
+    background-color: #d22856;
+    box-shadow: 0 10px 0 0 rgba(210, 40, 86, 1), 0 20px 0 0 rgba(210, 40, 86, 1);
+}
+
+.main-nav--closed .main-nav__toggle:active::before {
+    background-color: rgba(210, 40, 86, 0.3);
+    box-shadow: 0 10px 0 0 rgba(210, 40, 86, 0.3), 0 20px 0 0 rgba(210, 40, 86, 0.3);
+
+}
+
+.main-nav--opened .main-nav__toggle {
+    top: 0;
+    right: 0;
+    left: auto;
+
+    &::before,
+    &::after {
+        content: "";
+
+        position: absolute;
+
+        top: 10px;
+        right: 20px;
+
+        width: 22px;
+        height: 4px;
+
+        background-color: #ffffff;
+    }
+
+    &::before {
+        transform: rotate(45deg);
+    }
+
+    &::after {
+        transform: rotate(-45deg);
+    }
+
+    &:hover::before,
+    &:hover::after {
+        background-color: #d22856;
+    }
+
+    &:active::before,
+    &:active::after {
+        background-color: rgba(210, 40, 86, 0.3);
+    }
+}
+
+.main-nav--closed .site-list__item {
+    display: none;
+}
+
+
+
+
+.main-nav--opened .main-nav__wrapper {
+    position: absolute;
+    
+
+    width: 320px;
+}
+
+.main-nav--nojs .main-nav__toggle {
+    display: none;
+}
+
+.main-nav--nojs .main-nav__wrapper {
+    position: static;
+    min-height: 0;
+}
+
+
+.phone-in-hand__wrapper {
+    width: 320px;
+    background-image: url(../../img/bg-header-mobile.webp);
+    background-repeat: no-repeat;
+    background-position-y: -61px;
+    overflow: hidden;
+    
+    
+}
+
+.phone-in-hand__overflow {
+    overflow: hidden;
+}
+
+
+
+.phone-in-hand {
+    transform: scale(0.9) translate(5px, 60px);
+    
+}
+
+
+@media (min-width: @tablet-width) {
+    .main-nav {
+        width: 660px;
+    }
+
+    .main-nav__toggle {
+        top: -23px;
+    }
+
+    .main-nav--opened .main-nav__toggle {
+        top: -23px;
+    }
+
+    .main-nav--opened .main-nav__wrapper {
+        width: 660px;
+    }
+
+    
+
+    
+
+    .phone-in-hand__wrapper {
+        width: 660px;
+        background-image: url(../../img/back-tablet.webp);
+        background-repeat: no-repeat;
+        background-position-y: -110px;
+    }
+}
+
+
+
+
+
+
+
+@media (min-width: @desktop-width) {
+    .main-nav {
+        width: auto;
+        
+        
+    }
+
+    .main-nav--closed .site-list__item {
+        display: block;
+    }
+
+
+    .phone-in-hand__wrapper {
+        width: 1200px;
+        background-image: url(../../img/back-desktop.webp);
+        background-repeat: no-repeat;
+        
+    }
+
+    
+
+    .phone-in-hand {
+        padding-bottom: 136px;
+    }
+
+    
+}

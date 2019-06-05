@@ -1,0 +1,39 @@
+.advantages__wrapper {
+    background-image: url(../../img/advantages-bg.png);
+    background-repeat: no-repeat;
+    background-position: 0 5%;
+    overflow: hidden;
+}
+
+.iphone-big {
+    display: none;
+}
+
+@media (min-width: @tablet-width) {
+
+    .iphone-big {
+        display: inline-block;
+        
+        margin-bottom: -70px;
+        padding-top: 20px;
+        padding-left: 21px;
+    }
+    .advantages__wrapper {
+        background-image: url(/img/advantages-bg-tablet.png);
+        display: flex;
+        
+    }
+
+    
+}
+
+
+@media (min-width: @desktop-width) {
+    .iphone-big  {
+        display: none;
+    }
+
+    .advantages__wrapper {
+        background-image: url(/img/advantages-bg-desktop.png);
+    }
+}

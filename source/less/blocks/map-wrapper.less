@@ -1,0 +1,38 @@
+.map__wrapper {
+    background-image: url(../../img/map-mobile.png);
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.map__triangle {
+    transform: translateY(-73px);
+    
+}
+
+@media (min-width: @tablet-width) {
+    .map__wrapper {
+        background-image: url(/img/map-tablet.png);
+        background-position: 0 73%;
+        height: 373px;
+    }
+
+    .map__triangle {
+        transform: translateY(-55px)
+    }
+}
+
+
+@media (min-width: @desktop-width) {
+    .map__wrapper {
+        background-image: url(/img/map-desktop.png);
+        background-position-y: 58.5%;
+        height: 500px;
+    }
+
+    .map__triangle {
+        transform: translateY(-20px)
+    }
+}

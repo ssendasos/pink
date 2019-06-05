@@ -1,0 +1,130 @@
+.form__checkbox {
+    border: none;
+    background-color: #f2f2f2;
+    margin-top: -50px;
+    
+}
+
+.checkbox__title {
+    text-align: center;
+    font-size: 14px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: #d22856;
+    line-height: 18px;
+    padding-top: 100px;
+    text-transform: uppercase;
+    
+}
+
+.form__checkbox-item {
+    font-size: 18px;
+    margin-left: 75px;
+    margin-bottom: 52px;
+    position: relative;
+}
+
+.form__checkbox-item input[type="checkbox"] {
+    display: none;
+}
+
+.label__checkbox {
+    cursor: pointer;
+}
+
+
+
+.label__checkbox input[type="checkbox"] + .checkbox-indicator {
+    position: absolute;
+
+    content: "";
+
+    width: 35px;
+    height: 35px;
+    top: -5px;
+    left: -65px;
+
+    cursor: pointer;
+
+    background-color: #ffffff;
+    border: 2px solid #e5e5e5;
+
+    transition: border-color 0.7s ease;
+
+    
+}
+
+.label__checkbox input[type="checkbox"]:hover + .checkbox-indicator {
+    border-color: #283645;
+}
+
+.label__checkbox input[type="checkbox"]:active + .checkbox-indicator {
+    border-color: #d22856;
+}
+
+.label__checkbox input[type="checkbox"]:checked + .checkbox-indicator::before {
+    content: "";
+
+    position: absolute;
+
+    width: 22px;
+    height: 16px;
+    
+    top: 9px;
+    left: 7px;
+
+    background-image: url(/img/tick.png);
+}
+
+
+@media (min-width: @tablet-width) {
+    .form__checkbox {
+        background-color: #ffffff;
+        border: 2px solid #e5e5e5;
+        margin: 0;
+        
+    }
+
+    .checkbox__title {
+        padding-top: 0;
+        
+    }
+
+    .form__checkbox-item {
+        margin-left: 110px;
+    }
+
+    .first-checkbox {
+        margin-top: 0;
+        margin-top: 50px;
+    }
+
+    
+}
+
+
+@media (min-width: @desktop-width) {
+
+    .form__checkbox {
+        width: 950px;
+    }
+
+
+    .checkbox__wrapper {
+        display: grid;
+        grid-template-columns: 258px 243px 210px;
+        grid-row-gap: 65px;
+        grid-column-gap: 58px;
+        margin-left: 110px;
+        margin-top: 40px;
+    }
+
+    .form__checkbox-item {
+        margin: 0;
+    }
+
+
+}
+
+
+

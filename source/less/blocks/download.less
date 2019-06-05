@@ -1,0 +1,145 @@
+.download {
+    width: 320px;
+    
+
+    background-color: #1d2631;
+
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    
+    
+}
+
+.download__title {
+    margin: 0;
+    display: none;
+}
+
+.mobile__button--download {
+    display: inline-block;
+    margin-top: 27px;
+    margin-left: 18px;
+    padding-top: 17px;
+    padding-bottom: 18px;
+    padding-left: 37px;
+    padding-right: 36px;
+    text-align: center;
+
+    border-radius: 30px;
+
+    &:hover {
+        background-color: #ffffff;
+        color: #d22856;
+    }
+
+    &:active {
+        color: rgba(210, 40, 86, 0.3);
+    }
+    
+    
+    
+}
+
+
+.download__icons {
+    text-align: center;
+    padding-left: 30px;
+    margin-top: 32px;
+    
+}
+
+.download__icons svg {
+    padding-right: 35px;
+}
+
+.download__availability {
+    text-align: center;
+    
+    padding-bottom: 32px;
+}
+
+
+@media (min-width: @tablet-width) {
+    .phone-in-hand__flex {
+        position: relative;
+        display: flex;
+    }
+
+    .phone-in-hand__overflow {
+        order: 2;
+        overflow: visible;
+    }
+
+    .phone-in-hand {
+        transform: scale(1.8) translate(-10px, 110px);
+    }
+
+    .download {
+        background-color: transparent;
+        z-index: 1;
+    }
+
+    .mobile__button--download {
+        background-color: transparent;
+        font-size: 18px;
+    }
+
+    .download__title {
+        display: block;
+        margin-top: 103px;
+
+        font-size: 40px;
+        line-height: 40px;
+        font-weight: 300;
+        text-align: center;
+    }
+
+    .download__availability {
+        margin-bottom: 0;
+        margin-bottom: 113px;
+    }
+}
+
+
+
+@media (min-width: @desktop-width) {
+    .download {
+        width: 350px;
+        padding-left: 112px;
+    }
+    
+    .phone-in-hand {
+        transform: scale(2) translate(90px, 170px);
+    }
+
+    .download__title {
+        font-size: 50px;
+        line-height: 60px;
+        margin-top: 0;
+        margin-top: 115px;
+    }
+
+    .mobile__button--download {
+        font-size: 21px;
+        line-height: 18px;
+        margin-top: 0;
+        margin-top: 50px;
+        
+    }
+
+    .download__icons {
+        margin-top: 0;
+        margin-top: 67px;
+    }
+    
+    .download__availability {
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 300;
+        margin-top: 0;
+        margin-top: 50px;
+    }
+}
+

@@ -1,0 +1,169 @@
+
+.advantages__item-title {
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+.iphone-desktop {
+    display: none;
+}
+
+
+.mobile-hidden {
+    display: none;
+}
+
+.advantages__description {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+}
+
+
+.advantages__title,
+.advantages__title-second {
+    font-size: 24px;
+    line-height: auto;
+    font-weight: 300;
+    text-align: center;
+    
+}
+
+
+
+.advantages__title-second {
+    margin-bottom: 47px;
+}
+
+.advantages__item:first-child {
+    padding-top: 100px;
+}
+
+.iphone-img {
+    padding-left: 82px;
+    margin-bottom: -63px;
+    padding-top: 20px;
+}
+
+@media (min-width: @tablet-width) {
+    .advantages__title br {
+        display: none;
+    }
+
+    .advantages__title {
+        margin-bottom: 5px;
+    }
+
+    .advantages__title,
+    .advantages__title-second {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .advantages__title-second {
+        margin-top: 0;
+    }
+
+    .iphone-img {
+        display: none;
+    }
+
+    .advantages__item-title {
+        text-align: left;
+    }
+
+    .advantages__list {
+        margin-left: 46px;
+    }
+
+    .advantages__description {
+        text-align: left;
+        padding: 0;
+        padding-right: 40px;
+    }
+}
+
+
+@media (min-width: @desktop-width) {
+    .iphone-desktop {
+        display: inline-block;
+        padding: 0;
+        margin-bottom: 0;
+    }
+
+    .mobile-hidden {
+        display: inline-block;
+    }
+
+    .advantages__item:first-child {
+        
+        padding: 0;
+    }
+
+    .advantages__item-title {
+        font-size: 24px;
+        
+        line-height: 24px;
+        text-align: center;
+    }
+
+    .advantages__description {
+        text-align: center;
+        padding: 0;
+    }
+
+    .advantages__item {
+        width: 243px;
+    }
+
+    .advantages__item:first-child {
+        margin-left: 100px;
+    }
+
+    .advantages__item:last-child {
+        margin-right: 100px;
+    }
+
+    .img__wrapper {
+        height: 300px;
+        overflow: hidden;
+        margin-left: 30px;
+        position: relative;
+    }
+
+    .img__wrapper::after {
+        content: "";
+
+        position: absolute;
+
+        width: 300px;
+        height: 17px;
+
+        left: -70px;
+        top: 290px;
+
+        background-image: url(/img/iphone-shadow.png)
+    }
+
+    .advantages__profit-title br {
+        display: none;
+    }
+
+    .advantages__profit-title {
+        margin-top: 60px;
+    }
+
+    .advantages__profit-description {
+        padding-right: 250px;
+    }
+
+    .clock-img {
+        padding-bottom: 60px;
+    }
+}
