@@ -2,6 +2,8 @@
 <html lang="ru">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="Pink Contest" content="Конкурс на лучшую фотографию в Pink">
         <title>Форма</title>
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
         <link href="css/style.min.css" rel="stylesheet">
@@ -15,11 +17,11 @@
                                 <picture>
                                     <source type="image/webp" media="(min-width: 1200px)" srcset="img/logotype-white-desktop.webp">
                                     <source type="image/webp" media="(min-width: 660px)" srcset="img/logotype-white-tablet.webp">
-                                    <img  class="page-header__logo-image" src="img/logotype-white-mobile.webp" >
+                                    <img  class="page-header__logo-image" src="img/logotype-white-mobile.webp" alt="logo">
                                 </picture>
                             </a>
                             <nav class="main-nav main-nav--closed main-nav--nojs">
-                                <button class="main-nav__toggle" type="button"></button>
+                                <button class="main-nav__toggle" type="button" aria-label="Меню"></button>
                                 <div class="main-nav__wrapper">
                                     <ul class="main-nav__list site-list">
                                         <li class="site-list__item">
@@ -38,7 +40,7 @@
                                 </nav>
                             </div>
 
-                            <h1 class="form-page__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+                            <h1 class="form-page__title page-title">Конкурс на самое безбашенное путешествие с Пинк</h1>
                         </div>
                         
 
@@ -56,16 +58,16 @@
                     <div class="form__wrapper">
                         <fieldset class="form__text name-form">
                             <p class="form__item">
-                                <label class="label__style" name="second-name" for="second-name">Фамилия:</label>
-                                <input type="text" id="second-name" placeholder="Укажите фамилию *" required>
+                                <label class="label__style"  for="second-name">Фамилия:</label>
+                                <input class="input-custom" type="text" id="second-name" name="second-name" placeholder="Укажите фамилию *">
                             </p>
                             <p class="form__item first-name">
-                                <label class="label__style" name="first-name" for="first-name">Имя:</label>
-                                <input type="text" id="first-name" placeholder="Введите ваше имя *" required>
+                                <label class="label__style"  for="first-name">Имя:</label>
+                                <input class="input-custom" type="text" id="first-name" name="first-name" placeholder="Введите ваше имя *" >
                             </p>
                             <p class="form__item">
-                                <label class="label__style" name="third-name" for="third-name">Отчество:</label>
-                                <input type="text" id="middle-name" placeholder="Ну и отчество тоже">
+                                <label class="label__style"  for="third-name">Отчество:</label>
+                                <input class="input-custom" type="text" id="middle-name" name="third-name" placeholder="Ну и отчество тоже">
                             </p>
                         </fieldset>
                         <fieldset class="form__checkbox">
@@ -73,42 +75,42 @@
                             <div class="checkbox__wrapper">
                                 <p class="form__checkbox-item first-checkbox">
                                     <label class="label__checkbox" >
-                                        <input type="checkbox" name=""  checked>
+                                        <input type="checkbox" name="shark"  checked>
                                         <span class="checkbox-indicator"></span>
                                         Сделал селфи с акулой
                                     </label>
                                 </p>
                                 <p class="form__checkbox-item">
                                     <label class="label__checkbox">
-                                        <input type="checkbox" name=""  checked>
+                                        <input type="checkbox" name="beach"  checked>
                                         <span class="checkbox-indicator"></span>
                                         Обгорел на пляже
                                     </label>
                                 </p>
                                 <p class="form__checkbox-item">
                                     <label class="label__checkbox">
-                                        <input type="checkbox" name="">
+                                        <input type="checkbox" name="Chuk">
                                         <span class="checkbox-indicator"></span>
                                         Видел Чака Норриса
                                     </label>
                                 </p>
                                 <p class="form__checkbox-item">
                                     <label class="label__checkbox">
-                                        <input type="checkbox" name="">
+                                        <input type="checkbox" name="souvenir">
                                         <span class="checkbox-indicator"></span>
                                         Накупил сувениров
                                     </label>
                                 </p>
                                 <p class="form__checkbox-item">
                                     <label class="label__checkbox">
-                                        <input type="checkbox" name=""  checked>
+                                        <input type="checkbox" name="castle"  checked>
                                         <span class="checkbox-indicator"></span>
                                         Удержал башню
                                     </label>
                                 </p>
                                 <p class="form__checkbox-item">
                                     <label class="label__checkbox">
-                                        <input type="checkbox" name="">
+                                        <input type="checkbox" name="hotel">
                                         <span class="checkbox-indicator"></span>
                                         Разгромил отель
                                     </label>
@@ -119,12 +121,12 @@
                             <legend class="contact-title">Контактная информация</legend>  
                                 <div class="contact__wrapper">                      
                                 <p class="form__item phone-item">
-                                    <label class="label__style" for="phone">Номер телефона</label>
-                                    <input type="tel" id="phone" placeholder="Номер, пожалуйста">
+                                    <label class="label__style"  for="phone">Номер телефона</label>
+                                    <input class="input-custom" type="tel" id="phone" name="number" placeholder="Номер, пожалуйста">
                                 </p>
                                 <p class="form__item adress-item">
-                                    <label class="label__style" for="email">Адрес почты</label>
-                                    <input type="email" id="email" placeholder="Введите почту *" required>
+                                    <label class="label__style"  for="email">Адрес почты</label>
+                                    <input class="input-custom" type="email" id="email" name="email" placeholder="Введите почту *">
                                 </p>
                             </div>
                         </fieldset>
@@ -154,7 +156,7 @@
                         </fieldset>
                         <fieldset class="text__description">
                             <legend class="description__title">Опишите свои эмоции</legend>
-                            <textarea class="area"  placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+                            <textarea class="area" name="description"  placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
                         </fieldset>
                     </div>
                     <div class="wrapper">
@@ -167,18 +169,14 @@
         </main>
 
         <footer class="page-footer">
-            <div class="page-footer__wrapper">
-                
-                
-                    
-                </div>
-            </div>
+            
+            
             
             <div class="page-footer__social">
                 <div class="page-footer__logo">
                     <picture>
                         <source media="(min-width: 1200px)" srcset="img/logotype-blue-desktop2.png">
-                        <img src="img/logotype-blue-tablet.png">
+                        <img src="img/logotype-blue-tablet.png" alt="logo">
                     </picture>
                 </div>
                 <div class="page-footer__social-icons">
@@ -201,25 +199,26 @@
             </div>
         </footer>
 
-        <script>
+        <section class="modal modal-true">
+                <div class="modal-true__wrapper">
+                    <h2 class="modal-true__title modal-title">Ваша заявка отправлена</h2>
+                    <p class="modal-true__text modal-text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+                </div>
+                <div class="button-true__wrapper">
+                    <button type="button" class="button button-true modal-button">Закрыть окно</button>
+                </div>
+            </section>
+
+            <section class="modal modal-false">
+                <h2 class="modal-false__title modal-title">Что-то пошло не так!</h2>
+                <p class="modal-false__text modal-text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+                <div class="button-false__wrapper">
+                    <button class="button button-false modal-button">OK</button>
+                </div>
+            </section>
+        <script src="js/menu-script.js"></script>
+        <script src="js/form-script.js"></script>
         
-                var navMain = document.querySelector(".main-nav");
-                var navToggle = document.querySelector(".main-nav__toggle");
-    
-                navMain.classList.remove('main-nav--nojs');
-    
-                navToggle.addEventListener('click', function() {
-                    if (navMain.classList.contains('main-nav--closed')) {
-                        navMain.classList.remove('main-nav--closed');
-                        navMain.classList.add('main-nav--opened');
-                    } else {
-                        navMain.classList.add('main-nav--closed')
-                        navMain.classList.remove('main-nav--opened');
-                        
-                    }
-                });
-            
-            </script>
 
     </body>
 </html>

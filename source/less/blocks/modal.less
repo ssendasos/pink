@@ -1,0 +1,194 @@
+.modal {
+    width: 320px;
+    margin: 0 auto;
+    display: none;
+
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+    background-color: #ffffff;
+
+    
+}
+
+.required {
+    border-color: red;
+}
+
+
+@keyframes bounce {
+    0% {
+        transform: translateY(-3000px)
+    }
+
+    70% {
+        transform: translateY(-780px)
+    }
+
+    90% {
+        transform: translateY(-810px)
+    }
+
+    100% {
+        transform: translateY(-800px)
+    }
+}
+
+@keyframes bounce2 {
+    0% {
+        transform: translateY(-3000px)
+    }
+
+    70% {
+        transform: translateY(-880px)
+    }
+
+    90% {
+        transform: translateY(-910px)
+    }
+
+    100% {
+        transform: translateY(-900px)
+    }
+}
+
+.modal-false {
+    transform: translateY(-800px)
+}
+
+.modal-true {
+    transform: translateY(-900px)
+}
+
+.modal-title {
+    text-align: center;
+    padding-top: 45px;
+    font-size: 18px;
+}
+
+.modal-show {
+    display: block;
+    animation: bounce 0.7s ease;
+}
+
+
+
+.modal-text {
+    text-align: center;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.modal-false__text {
+    padding: 0;
+}
+
+.button-false {
+    padding-left: 128px;
+    padding-right: 128px;
+    
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-radius: 5px;
+    background-color: #2aab6d;
+    margin-left: 19px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #1c9b5e;
+    }
+
+    &:active {
+        color: rgba(255, 255, 255, 0.3);
+    }
+}
+
+.button-true {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 80px;
+    padding-right: 80px;
+    border-radius: 5px;
+    background-color: #2aab6d;
+    margin-left: 19px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #1c9b5e;
+    }
+
+    &:active {
+        color: rgba(255, 255, 255, 0.3);
+    }
+}
+
+.button-true__wrapper {
+    background-color: #f2f2f2;
+    padding-top: 30px;
+    
+}
+
+@media (min-width: @tablet-width) {
+    .modal {
+        width: 460px;
+    }
+
+    .modal-title {
+        font-size: 40px;
+        line-height: 50px;
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    .modal-text {
+        padding-left: 70px;
+        padding-right: 70px;
+        font-size: 18px;
+    }
+
+    .button-false,
+    .button-true {
+        margin-left: 82px;
+        font-size: 18px;
+    }
+}
+
+
+
+
+@media (min-width: @desktop-width) {
+    .modal {
+        width: 780px;
+    }
+
+    .modal-text {
+        padding-left: 200px;
+        padding-right: 200px;
+        
+    }
+
+    .modal-title {
+        font-size: 30px;
+    }
+
+    .button-false__wrapper {
+        background-color: #f2f2f2;
+        padding-top: 30px;
+    }
+
+    .button-true {
+        padding-left: 167px;
+        padding-right: 167px;
+        margin-left: 160px;
+    }
+
+    .button-false {
+        padding-left: 136px;
+        padding-right: 136px;
+        margin-left: 240px;
+    }
+}

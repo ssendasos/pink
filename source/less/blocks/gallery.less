@@ -1,0 +1,260 @@
+.photo-page__title {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 300;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 30px;
+    padding-bottom: 80px;
+}
+
+.gallery__description {
+    padding-left: 35px;
+    padding-right: 35px;
+    text-align: center;
+    line-height: 30px;
+    margin-bottom: 43px;
+    margin-top: 43px;
+}
+
+.comments__item {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    
+}
+
+.picture-day {
+    margin-left: -20px;
+}
+
+.comments__picture {
+    text-align: center;
+    margin-bottom: 0;
+    height: 137px;
+}
+
+.comment__wrapper {
+    background-color: #f2f2f2;
+    width: 240px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.comments__text {
+    margin-top: 0;
+}
+
+.comments__author-name {
+    display: block;
+    padding-top: 65px;
+    font-style: normal;
+
+    font-weight: 700;
+
+    
+}
+
+.comment-day {
+    padding-top: 25px;
+}
+
+.time-ago {
+    font-weight: 300;
+}
+
+.comments__likes {
+    text-transform: uppercase;
+    font-size: 12px;
+    padding-left: 32px;
+    color: #d22856;
+    padding-bottom: 23px;
+    position: relative;
+}
+
+.comments__heart {
+    position: absolute;
+
+    content: "";
+    width: 13px;
+    height: 12px;
+    top: 5px;
+    left: 2px;
+
+    background-image: url(/img/icon-heart.webp);
+    background-repeat: no-repeat;
+}
+
+.comment-day {
+    position: relative;
+}
+
+.comment-day::before {
+    content: "панорама дня";
+    position: absolute;
+
+    width: 140px;
+    height: 26px;
+
+    background-color: #d22856;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 12px;
+    
+
+    top: -137px;
+    left: 140px;
+    
+}
+
+@media (min-width: @tablet-width) {
+    .photo-page__title {
+        font-size: 50px;
+        line-height: 60px;
+        margin-top: 78px;
+        padding-bottom: 0;
+        padding-bottom: 150px;
+        margin-bottom: 0;
+    }
+
+    .gallery__description {
+        font-size: 18px;
+        padding-left: 100px;
+        padding-right: 100px;
+        margin-top: 93px;
+        margin-bottom: 74px;
+    }
+
+    .comments__item {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    
+
+    .comment__wrapper {
+        width: 260px;
+        margin-top: 120px;
+    }
+
+    .comments__text {
+        height: 54px;
+    }
+
+    .day__wrapper {
+        margin-top: 370px;
+        width: 580px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .day__wrapper .comments__likes {
+        order: 2;
+        padding-top: 13px;
+        margin-right: 39px;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    .day__wrapper .comments__text {
+        order: 3;
+    }
+
+    .day__wrapper .comments__heart {
+        margin-top: 13px;
+        left: 110px;
+    }
+
+    .comments__heart {
+        left: 240px;
+    }
+
+    .comments__likes {
+        padding-left: 0;
+        margin-bottom: 5;
+    }
+
+    .comments__picture {
+        text-align: left;
+    }
+
+    .gallery__comments {
+        display: grid; 
+        grid-template-columns: 300px 300px;
+        grid-column-gap: 20px;
+    }
+
+    .day-item {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+
+    .comment-day::before {
+        top: -451px;
+        left: 460px;
+    }
+
+    
+
+    
+}
+
+
+
+@media (min-width: @desktop-width) {
+    .photo-page__title {
+        padding-left: 423px;
+        padding-right: 423px;
+        padding-bottom: 100px;
+        margin-top: 65px;
+    }
+
+    .comment__wrapper {
+        margin-top: 220px;
+    }
+
+    .gallery__description {
+        padding-left: 300px;
+        padding-right: 300px;
+    }
+
+    .day__wrapper {
+        width: 900px;
+        margin-left: 100px;
+        margin-top: 370px;
+    }
+
+    .day__wrapper .comments__text {
+        margin-bottom: 0;
+    }
+
+    .gallery__comments {
+        grid-template-columns: 300px 300px 300px;
+        margin-left: 100px;
+        
+    }
+
+    .gallery__comments .day-item {
+        margin-left: -80px;
+    }
+
+    .day-item {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        
+    }
+
+    .comments__likes {
+        margin-bottom: 50px;
+    }
+
+    .comment-day::before {
+        left: 790px;
+    }
+}

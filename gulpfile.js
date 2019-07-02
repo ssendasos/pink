@@ -13,6 +13,7 @@ var imagemin = require('gulp-imagemin');
 var webp = require('gulp-webp');
 var posthtml = require('gulp-posthtml');
 var del = require('del');
+var minifyjs = require('gulp-js-minify');
 
 
 gulp.task('style', function() {
@@ -75,6 +76,19 @@ gulp.task('copy', function() {
     })
     .pipe(gulp.dest("build"));
 });
+
+
+gulp.task('minify-js', function(){
+    return gulp.src('source/js/**/*.js')
+      .pipe(gulp.dest('build/js'))
+      .pipe(minifyjs())
+      .pipe(rename(function(path) {
+          
+          path.basename += "-min";
+          path.extname = ".js";
+      }))
+      .pipe(gulp.dest('build/js'))
+  });
 
 
 

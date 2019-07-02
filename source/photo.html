@@ -2,117 +2,199 @@
 <html lang="ru">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="Pink Gallery" content="Наши лучшие фотографии">
         <title>Галерея</title>
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet">
+        <link href="css/style.min.css" rel="stylesheet">
     </head>
-    <body class="inner-page-2">
+    <body class="inner-page">
 
         <header class="page-header">
             <div class="page-header__wrapper">
-                <a class="page-header__logo">
-                    <img class="page-header__logo-image" src="img/logo-mobile.svg" width="75" height="22" alt="Лого Pink">
-                </a>
-                <nav class="main-nav">
-                    <button class="main-nav__toggle" type="button">Открыть меню</button>
-                    <ul class="main-nav__list site-list">
-                        <li class="site-list__item">
-                            <a href="index.html">Главная</a>
-                        </li>
-                        <li class="site-list__item site-list__item--active">
-                            <a>Фотографии</a>
-                        </li>
-                        <li class="site-list__item">
-                            <a href="form.html">Конкурс</a>
-                        </li>
-                        <li class="site-list__item">
-                            <a href="#">HTML Academy</a>
-                        </li>
-                    </ul>
-                </nav>
-                <h1 class="form__title">Фотографии пользователей</h1>
-            </div>
-        </header> 
+                <div class="page-header__wrapper-top">
+                    <a class="page-header__logo">
+                        <picture>
+                            <source type="image/webp" media="(min-width: 1200px)" srcset="img/logotype-white-desktop.webp">
+                            <source type="image/webp" media="(min-width: 660px)" srcset="img/logotype-white-tablet.webp">
+                            <img  class="page-header__logo-image" src="img/logotype-white-mobile.webp"  alt="logo">
+                        </picture>
+                    </a>
+                    <nav class="main-nav main-nav--closed main-nav--nojs">
+                        <button class="main-nav__toggle" type="button" aria-label="Меню"></button>
+                        <div class="main-nav__wrapper">
+                            <ul class="main-nav__list site-list">
+                                <li class="site-list__item">
+                                    <a href="index.html">Главная</a>
+                                </li>
+                                <li class="site-list__item site-list__item--active">
+                                    <a>Фотографии</a>
+                                </li>
+                                <li class="site-list__item">
+                                    <a href="form.html">Конкурс</a>
+                                </li>
+                                <li class="site-list__item">
+                                    <a href="#">HTML Academy</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
 
-        <main class="page-main__photo">
+                    <h1 class="photo-page__title">Фотографии пользователей</h1>
+                </div>
+                
+
+
+            
+            
+                
+        </header>
+
+        <main class="page-main">
 
             <section class="gallery">
                 <p class="gallery__description">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
                 <div class="gallery__comments">
-                    <blockquote class="comments__item">
-                        <p class="comments__picture">
-                            <img class="comments__image" src="img/gallery-image-modile-1" width="320" height="137">
+                    <blockquote class="comments__item day-item">
+                        <p class="comments__picture picture-day">
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="img/panorama-desktop.jpg">
+                                <source media="(min-width: 660px)" srcset="img/panorama-tablet.jpg">
+                                <img class="comments__image" src="img/panorama-mobile.jpg" alt="Фотография дня">
+                            </picture>
                         </p>
-                        <cite class="comments__author-name">Анна <span class="time-ago">(5 минут назад)</span></cite>
-                        <p class="comments__text">Прыгать или нет? Напишите в комментарии свой своет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-                        <p class="comments__likes"><span class="comments__heart"></span> Нравится: 215 </p>
+                        <div class="comment__wrapper day__wrapper">
+                            <cite class="comments__author-name comment-day">Анна <span class="time-ago">(5 минут назад)</span></cite>
+                            <p class="comments__text">Прыгать или нет? Напишите в комментарии свой своет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+                            <p class="comments__likes"><span class="comments__heart"></span> Нравится: 215 </p>
+                        </div>
                     </blockquote>
                     <blockquote class="comments__item">
                         <p class="comments__picture">
-                            <img class="comments__image" src="img/gallery-image-modile-2" width="280" height="180">
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg">
+                                <source media="(min-width: 660px)" srcset="img/photo-1-tablet.webp">
+                                <img class="comments__image" src="img/photo-1-mobile.jpg" alt="Первое фото">
+                            </picture>
                         </p>
-                        <cite class="comments__author-name">Левон <span class="time-ago">(5 часов назад)</span></cite>
-                        <p class="comments__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-                        <p class="comments__likes"><span class="comments__heart"></span> Нравится: 356 </p>
+                        <div class="comment__wrapper">
+                            <cite class="comments__author-name">Левон <span class="time-ago">(5 часов назад)</span></cite>
+                            <p class="comments__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                            <p class="comments__likes"><span class="comments__heart"></span> Нравится: 356 </p>
+                        </div>
                     </blockquote>
                     <blockquote class="comments__item">
                         <p class="comments__picture">
-                            <img class="comments__image" src="img/gallery-image-modile-3" width="280" height="180">
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.jpg">
+                                <source media="(min-width: 660px)" srcset="img/photo-2-tablet.jpg">
+                                <img class="comments__image" src="img/photo-2-mobile.jpg"  alt="Второе фото">
+                            </picture>
                         </p>
-                        <cite class="comments__author-name">Антон <span class="time-ago">(12 часов назад)</span></cite>
-                        <p class="comments__text">Соседи будут рады!</p>
-                        <p class="comments__likes"><span class="comments__heart"></span> Нравится: 666 </p>
+                        <div class="comment__wrapper">
+                            <cite class="comments__author-name">Антон <span class="time-ago">(12 часов назад)</span></cite>
+                            <p class="comments__text">Соседи будут рады!</p>
+                            <p class="comments__likes"><span class="comments__heart"></span> Нравится: 666 </p>
+                        </div>
                     </blockquote>
                     <blockquote class="comments__item">
                         <p class="comments__picture">
-                            <img class="comments__image" src="img/gallery-image-modile-4" width="280" height="180">
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="img/photo-3-desktop.jpg">
+                                <source media="(min-width: 660px)" srcset="img/photo-3-tablet.webp">
+                                <img class="comments__image" src="img/photo-3-mobile.jpg"  alt="Третье фото">
+                            </picture>
                         </p>
-                        <cite class="comments__author-name">Борис <span class="time-ago">(20 часов назад)</span></cite>
-                        <p class="comments__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-                        <p class="comments__likes"><span class="comments__heart"></span> Нравится: 215 </p>
+                        <div class="comment__wrapper">
+                            <cite class="comments__author-name">Борис <span class="time-ago">(20 часов назад)</span></cite>
+                            <p class="comments__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                            <p class="comments__likes"><span class="comments__heart"></span> Нравится: 215 </p>
+                        </div>
                     </blockquote>
                     <blockquote class="comments__item">
                         <p class="comments__picture">
-                            <img class="comments__image" src="img/gallery-image-modile-5" width="280" height="180">
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="img/photo-4-desktop.jpg">
+                                <source media="(min-width: 660px)" srcset="img/photo-4-tablet.webp">
+                                <img class="comments__image" src="img/photo-4-mobile.jpg"  alt="Четвертое фото">
+                            </picture>
                         </p>
-                        <cite class="comments__author-name">Сергей <span class="time-ago">(25 часов назад)</span></cite>
-                        <p class="comments__text">Самая кубанская в мире!</p>
-                        <p class="comments__likes"><span class="comments__heart"></span> Нравится: 4 </p>
+                        <div class="comment__wrapper">
+                            <cite class="comments__author-name">Сергей <span class="time-ago">(25 часов назад)</span></cite>
+                            <p class="comments__text">Самая кубанская в мире!</p>
+                            <p class="comments__likes"><span class="comments__heart"></span> Нравится: 4 </p>
+                        </div>
                     </blockquote>
                     <blockquote class="comments__item">
                         <p class="comments__picture">
-                            <img class="comments__image" src="img/gallery-image-modile-6" width="280" height="180">
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="img/photo-5-desktop.jpg">
+                                <source media="(min-width: 660px)" srcset="img/photo-5-tablet.jpg">
+                                <img class="comments__image" src="img/photo-5-mobile.jpg"  alt="Пятое фото">
+                            </picture>
                         </p>
-                        <cite class="comments__author-name">Максим <span class="time-ago">(40 часов назад)</span></cite>
-                        <p class="comments__text">Где снег-то?</p>
-                        <p class="comments__likes"><span class="comments__heart"></span> Нравится: 150 </p>
+                        <div class="comment__wrapper">
+                            <cite class="comments__author-name">Максим <span class="time-ago">(40 часов назад)</span></cite>
+                            <p class="comments__text">Где снег-то?</p>
+                            <p class="comments__likes"><span class="comments__heart"></span> Нравится: 150 </p>
+                        </div>
                     </blockquote>
                     <blockquote class="comments__item">
                         <p class="comments__picture">
-                            <img class="comments__image" src="img/gallery-image-modile-7" width="280" height="180">
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="img/photo-6-desktop.webp">
+                                <source media="(min-width: 660px)" srcset="img/photo-6-tablet.webp">
+                                <img class="comments__image" src="img/photo-6-mobile.webp" alt="Шестое фото">
+                            </picture>
                         </p>
-                        <cite class="comments__author-name">Надежда  <span class="time-ago">(45 часов назад)</span></cite>
-                        <p class="comments__text">Всем GM и взаимные лайки!</p>
-                        <p class="comments__likes"><span class="comments__heart"></span> Нравится: 2560 </p>
+                        <div class="comment__wrapper">
+                            <cite class="comments__author-name">Надежда  <span class="time-ago">(45 часов назад)</span></cite>
+                            <p class="comments__text">Всем GM и взаимные лайки!</p>
+                            <p class="comments__likes"><span class="comments__heart"></span> Нравится: 2560 </p>
+                        </div>
                     </blockquote>
                 </div>
             </section>
 
             <section class="publication">
 
-                <p class="publication__description">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+                <p class="publication__description">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</p>
                 <div class="publication__wrapper">
                     <p class="publication__picture">
-                        <img class="publication_image" src="img/publication-image-mobile" width="280" height="374">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="img/photo-7-desktop.jpg">
+                            <source media="(min-width: 660px)" srcset="img/photo-7-tablet.jpg">
+                            <img class="publication_image" src="img/photo-7-mobile.jpg"  alt="Редактируемое фото">
+                        </picture>
                     </p>
-                    <form class="publication__form">
-                        <button type="button" class="button-cut">Обрезать</button>
-                        <button type="button" class="button-fill">Заливка</button>
-                        <button type="button" class="button-contrast">Контрастность</button>
+                    <form class="publication__form" action="https://echo.htmlacademy.ru" method="post">
+                        <div class="button__wrapper">
+                            <button type="button" class="button-cut public-button">Обрезать</button>
+                            <button type="button" class="button-fill public-button">Заливка</button>
+                            <button type="button" class="button-contrast public-button">Контрастность</button>
+                        </div>
                         <fieldset class="form__cut">
                             
-                            <p class="range-item">
-                                <input class="form-range" type="range">
+                            <p class="range-item item-cut">
+                                <input class="form-range" type="range" id="cut" min="0" max="100">
+                                <label class="label-range cut-range" for="cut">
+                                    <div class="bar cut-bar"><span class="range-button"></span></div>
+                                    
+                                </label>
+                            </p>
+                            <p class="range-item item-fill">
+                                <input class="form-range" type="range" id="fill" min="0" max="100">
+                                <label class="label-range fill-range" for="fill">
+                                    <div class="bar fill-bar"><span class="range-button"></span></div>
+                                        
+                                </label>
+                            </p>
+                            <p class="range-item item-contrast">
+                                <input class="form-range" type="range" id="contrast" min="0" max="100">
+                                <label class="label-range contrast-range" for="contrast">
+                                    <div class="bar contrast-bar"><span class="range-button"></span></div>
+                                        
+                                </label>
                             </p>
                         </fieldset>
                         <button class="button button-post" type="submit">Запостить</button>
@@ -126,46 +208,42 @@
         
 
         <footer class="page-footer">
-            <a class="page-footer__logo">
-                <img src="img/footer-logo" width="147" height="40" alt="Лого пинк">
-            </a>
-
+            
+            
             <div class="page-footer__social">
-                <ul class="social__list">
-                    <li class="social__item">
-                        <a class="social__link social__link--twitter" href="#">Мы в Твиттере </a>
-                    </li>
-                    <li class="social__item">
-                        <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке </a>
-                    </li>
-                    <li class="social__item">
-                        <a class="social__link social__link--youtube" href="#">Мы на Ютубе </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer__copyright">
-                <p class="copyright__text">Разработано
-                    <a class="button copyright__link" href="#">HTML Academy</a>
-                </p>
-            </div>
-
-
-            <section class="modal modal-true">
-                <div class="modal-true__wrapper">
-                    <h2 class="modal-true__title">Ваша заявка отправлена</h2>
-                    <p class="modal-true__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+                <div class="page-footer__logo">
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="img/logotype-blue-desktop2.png">
+                        <img src="img/logotype-blue-tablet.png" alt="logo">
+                    </picture>
                 </div>
-                <div class="button-true__wrapper">
-                    <button type="button" class="button button-true">Закрыть окно</button>
+                <div class="page-footer__social-icons">
+                    <ul class="social__list">
+                        <li class="social__item social__item--twitter">
+                            <a class="social__link social__link--twitter" href="#">Мы в твиттере!</a>
+                        </li>
+                        <li class="social__item social__item--facebook">
+                            <a class="social__link social__link--facebook" href="#">Мы на фейсбуке!</a>
+                        </li>
+                        <li class="social__item social__item--youtube">
+                            <a class="social__link social__link--youtube" href="#">Мы на Ютубе!</a>
+                        </li>
+                    </ul>
                 </div>
-            </section>
-
-            <section class="modal modal-false">
-                <h2 class="modal-false__title">Что-то пошло не так!</h2>
-                <p class="modal-false__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-                <button class="button button-false">OK</button>
-            </section>
+                <div class="page-footer__copyright">
+                    <b class="copyright__text">Разработано</b>
+                    <a class="copyright__link" href="#">HTML Academy</a>
+                </div>
+            </div>
         </footer>
+        
+
+
+            
+        </footer>
+
+
+        <script src="js/menu-script.js"></script>
 
     </body>
 </html>

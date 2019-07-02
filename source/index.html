@@ -2,6 +2,8 @@
 <html lang="ru">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="Pink App" content="Photo-Edit App">
         <title>Pink</title>
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
         <link href="css/style.min.css" rel="stylesheet">
@@ -15,11 +17,11 @@
                         <picture>
                             <source type="image/webp" media="(min-width: 1200px)" srcset="img/logotype-white-desktop.webp">
                             <source type="image/webp" media="(min-width: 660px)" srcset="img/logotype-white-tablet.webp">
-                            <img  class="page-header__logo-image" src="img/logotype-white-mobile.webp" >
+                            <img  class="page-header__logo-image" src="img/logotype-white-mobile.webp" alt="Pink logo" >
                         </picture>
                     </a>
                     <nav class="main-nav main-nav--closed main-nav--nojs">
-                        <button class="main-nav__toggle" type="button"></button>
+                        <button class="main-nav__toggle" type="button" aria-label="Меню"></button>
                         <div class="main-nav__wrapper">
                             <ul class="main-nav__list site-list">
                                 <li class="site-list__item site-list__item--active">
@@ -45,8 +47,8 @@
                     <div class="phone-in-hand__flex">
                         <div class="phone-in-hand__overflow">
                             <picture>
-                                <source type="image/webp" srcset="img/phone-in-hand-modile.webp">
-                                <img class="phone-in-hand" src="img/phone-in-hand-modile.png">
+                                
+                                <img class="phone-in-hand" src="img/phone-in-hand-modile.webp" alt="Изображение iPhone в руке">
                             </picture>
                         </div>
                         <div class="download">
@@ -81,11 +83,11 @@
                 <h2 class="advantages__title">Устали от серости<br> мегаполиса?</h2>
                 <h2 class="advantages__title-second">Нам есть, что вам<br> предложить!</h2>
                 <div class="advantages__wrapper">
-                    <img class="iphone-big" src="img/Iphone-big-tablet.png" width="268" height="547">
+                    <img class="iphone-big" src="img/Iphone-big-tablet.webp" width="268" height="547">
                     <ul class="advantages__list">
                         <li class="advantages__item">
                             <div class="img__wrapper">
-                                <img class="mobile-hidden" src="img/iphone-grey-desktop.png" width="186" height="382">
+                                <img class="mobile-hidden" src="img/iphone-grey-desktop.webp" width="186" height="382">
                             </div>
                             <h3 class="advantages__item-title">Поднимает настроение</h3>
                             <p class="advantages__description">Приложение позволит вам победить осенюю хандру и депрессию буквально в несколько кликов!</p>
@@ -93,7 +95,7 @@
                         </li>
                         <li class="advantages__item">
                             <div class="img__wrapper">
-                                <img class="mobile-hidden" src="img/iphone-purple.png" width="186" height="382">
+                                <img class="mobile-hidden" src="img/iphone-purple.webp" width="186" height="382">
                             </div>
                             <h3 class="advantages__item-title">Меняет мир вокруг</h3>
                             <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
@@ -101,17 +103,17 @@
                         </li>
                         <li class="advantages__item">
                             <div class="img__wrapper">
-                                <img class="iphone-img iphone-desktop" src="img/iphone-hello-mobile.png" width="187" height="389">
+                                <img class="iphone-img iphone-desktop" src="img/iphone-hello-mobile.webp" width="187" height="389"alt="Изображение приветливого айфона">
                             </div>
                             <h3 class="advantages__item-title">Заводит новых друзей</h3>
                             <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-                            <img class="iphone-img iphone-mobile" src="img/iphone-hello-mobile.png" width="157" height="330">
+                            <img class="iphone-img iphone-mobile" src="img/iphone-hello-mobile.webp" width="157" height="330" alt="Изображение приветливого айфона">
                         </li>
                     </ul>
                     
                     </div>
                     <div class="advantages__profit" >
-                        <img class="clock-img" src="img/clock-tablet.png">
+                        <img class="clock-img" src="img/clock-tablet.webp">
                             <div class="profit__wrapper">
                                 <h2 class="advantages__profit-title">Эффект<br> на 24 часа!</h2>
                                 <p class="advantages__profit-description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
@@ -121,7 +123,7 @@
             </section>
 
             <section class="reviews">
-                <img class="quotes" src="img/quotes.png">
+                <img class="quotes" src="img/quotes.webp">
                 <div class="reviews__wrapper slider">
                     <input type="radio" id="btn-1" name="radio" checked>
                     <input type="radio" id="btn-2" name="radio">
@@ -155,9 +157,9 @@
                         </div>
                     </div>
                     <div class="slider-controls">
-                        <label for="btn-1"></label>
-                        <label for="btn-2"></label>
-                        <label for="btn-3"></label>
+                        <label for="btn-1" aria-label="Первый отзыв"></label>
+                        <label for="btn-2" aria-label="Второй отзыв"></label>
+                        <label for="btn-3" aria-label="Третий отзыв"></label>
                     </div>
                 </div>
             </section>
@@ -259,9 +261,9 @@
                         </table>
                     </div>
                     <div class="slider-controls catalog-controls">
-                        <label for="btn1"></label>
-                        <label for="btn2"></label>
-                        <label for="btn3"></label>
+                        <label for="btn1" aria-label="Первая опция"></label>
+                        <label for="btn2" aria-label="Вторая опция"></label>
+                        <label for="btn3" aria-label="Третья опция"></label>
                     </div>
                 </div>
             </section>
@@ -279,7 +281,7 @@
                         </div>
                         <div class="write__wrapper">
                             <h3 class="contacts__title">Пишите:</h3>
-                            <a href="#" class="contacts__item contacts-item--mail">mail@htmlacademy.ru</a>
+                            <a href="#" class="contacts__item contacts-item--mail" aria-label="Наша Почта">mail@htmlacademy.ru</a>
                         </div>
                         <div class="adress__wrapper">
                             <h3 class="contacts__title">Приезжайте в гости:</h3>
@@ -291,7 +293,7 @@
                     <picture>
                         <source media="(min-width: 1200px)" srcset="img/triangle-desktop.png">
                         <source media="(min-width: 660px)" srcset="img/triangle-tablet.png">
-                        <img class="map__triangle" src="img/triangle-white-footer.png" >
+                        <img class="map__triangle" src="img/triangle-white-footer.webp" alt="Фигурный треугольник">
                     </picture>
                     <span class="map-marker"></span>
                 </div>
@@ -301,7 +303,7 @@
                 <div class="page-footer__logo">
                     <picture>
                         <source media="(min-width: 1200px)" srcset="img/logotype-blue-desktop2.png">
-                        <img src="img/logotype-blue-tablet.png">
+                        <img src="img/logotype-blue-tablet.png" alt="Маркер на карте">
                     </picture>
                 </div>
                 <div class="page-footer__social-icons">
@@ -323,24 +325,6 @@
                 </div>
             </div>
         </footer>
-        <script>
-        
-            var navMain = document.querySelector(".main-nav");
-            var navToggle = document.querySelector(".main-nav__toggle");
-
-            navMain.classList.remove('main-nav--nojs');
-
-            navToggle.addEventListener('click', function() {
-                if (navMain.classList.contains('main-nav--closed')) {
-                    navMain.classList.remove('main-nav--closed');
-                    navMain.classList.add('main-nav--opened');
-                } else {
-                    navMain.classList.add('main-nav--closed')
-                    navMain.classList.remove('main-nav--opened');
-                    
-                }
-            });
-        
-        </script>
+        <script src="js/menu-script.js"></script>
     </body>
 </html>
